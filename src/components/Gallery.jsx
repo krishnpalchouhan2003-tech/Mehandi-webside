@@ -1,56 +1,38 @@
 function Gallery() {
+  const designs = [
+    { title: "Bridal Mehendi", image: "/src/assets/images/home/bridal.png" },
+    { title: "Arabic Mehendi", image: "/src/assets/images/home/arabic.png" },
+    { title: "Festival Mehendi", image: "/src/assets/images/home/festival.png" },
+  ];
+
   return (
-    <section className="bg-[#fdf1e7] py-16 px-10">
+    <section className="bg-cream py-24 px-6 md:px-20">
       
-      <h2 className="text-3xl font-bold text-center mb-10 relative">
-        Our Mehendi Designs
-        <span className="block w-24 h-[2px] bg-yellow-400 mx-auto mt-2"></span>
-      </h2>
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 ornament-divider text-maroon">
+          Our Mehendi Designs
+        </h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
-
-        {/* Bridal */}
-        <div className="relative group overflow-hidden rounded-xl">
-          <img
-            src="/src/assets/images/bridal/bridal1.jpg"
-            className="w-full h-64 object-cover rounded-xl shadow-md group-hover:scale-105 transition duration-300"
-            alt="Bridal Mehendi"
-          />
-
-          <div className="absolute bottom-0 w-full bg-black/60 text-white py-2 text-center opacity-0 group-hover:opacity-100 transition duration-300">
-            Bridal Mehendi
-          </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {designs.map((design, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:-translate-y-2 border-4 border-white">
+              <img
+                src={design.image}
+                className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
+                alt={design.title}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-maroon/80 via-transparent to-transparent opacity-60"></div>
+              <div className="absolute bottom-0 w-full p-6 text-center transform transition-transform duration-500">
+                <h3 className="text-white text-2xl font-bold tracking-wide">
+                  {design.title}
+                </h3>
+              </div>
+            </div>
+          ))}
         </div>
-
-        {/* Groom */}
-        <div className="relative group overflow-hidden rounded-xl">
-          <img
-            src="/src/assets/images/groom/groom1.jpg"
-            className="w-full h-64 object-cover rounded-xl shadow-md group-hover:scale-105 transition duration-300"
-            alt="Groom Mehendi"
-          />
-
-          <div className="absolute bottom-0 w-full bg-black/60 text-white py-2 text-center opacity-0 group-hover:opacity-100 transition duration-300">
-            Groom Mehendi
-          </div>
-        </div>
-
-        {/* Baby Shower */}
-        <div className="relative group overflow-hidden rounded-xl">
-          <img
-            src="/src/assets/images/Baby showr/baby1.jpg"
-            className="w-full h-64 object-cover rounded-xl shadow-md group-hover:scale-105 transition duration-300"
-            alt="Baby Shower Mehendi"
-          />
-
-          <div className="absolute bottom-0 w-full bg-black/60 text-white py-2 text-center opacity-0 group-hover:opacity-100 transition duration-300">
-            Baby Shower Mehendi
-          </div>
-        </div>
-
       </div>
     </section>
   );
 }
 
-export default Gallery;
+export default Gallery;
