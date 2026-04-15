@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import StatsBar from "../components/StatsBar";
 import Gallery from "../components/Gallery";
 import Packages from "../components/Packages";
 import Testimonials from "../components/Testimonials";
@@ -12,6 +13,7 @@ function Home() {
     <>
       <Navbar />
       <Hero />
+      <StatsBar />
       <Gallery />
       <Packages />
       <Testimonials />
@@ -22,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home;
