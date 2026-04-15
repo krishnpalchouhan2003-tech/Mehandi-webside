@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fdf1e7;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #7a1f3d;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5a1530;
+  }
+
+  /* Modal backdrop animation */
+  .modal-backdrop {
+    animation: fadeIn 0.25s ease-out forwards;
+  }
+  .modal-content {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+
+  /* Staggered card animation delays */
+  .design-card:nth-child(1) { animation-delay: 0.05s; }
+  .design-card:nth-child(2) { animation-delay: 0.10s; }
+  .design-card:nth-child(3) { animation-delay: 0.15s; }
+  .design-card:nth-child(4) { animation-delay: 0.20s; }
+  .design-card:nth-child(5) { animation-delay: 0.25s; }
+  .design-card:nth-child(6) { animation-delay: 0.30s; }
+  .design-card:nth-child(7) { animation-delay: 0.35s; }
+  .design-card:nth-child(8) { animation-delay: 0.40s; }
+  .design-card:nth-child(9) { animation-delay: 0.45s; }
+  .design-card:nth-child(10) { animation-delay: 0.50s; }
+  .design-card:nth-child(11) { animation-delay: 0.55s; }
+  .design-card:nth-child(12) { animation-delay: 0.60s; }
+  .design-card:nth-child(13) { animation-delay: 0.65s; }
+  .design-card:nth-child(14) { animation-delay: 0.70s; }
+  .design-card:nth-child(15) { animation-delay: 0.75s; }
+  .design-card:nth-child(16) { animation-delay: 0.80s; }
+  .design-card:nth-child(17) { animation-delay: 0.85s; }
+  .design-card:nth-child(18) { animation-delay: 0.90s; }
+  .design-card:nth-child(19) { animation-delay: 0.95s; }
+  .design-card:nth-child(20) { animation-delay: 1.00s; }
+  .design-card:nth-child(21) { animation-delay: 1.05s; }
+  .design-card:nth-child(22) { animation-delay: 1.10s; }
+  .design-card:nth-child(23) { animation-delay: 1.15s; }
+
+  /* Page hero gradient overlays */
+  .page-hero-overlay {
+    background: linear-gradient(135deg, rgba(122, 31, 61, 0.85) 0%, rgba(26, 26, 46, 0.75) 100%);
+  }
+
+  /* Gold shimmer effect */
+  .gold-shimmer {
+    background: linear-gradient(90deg, #d4a853, #f0d48a, #d4a853);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes shimmer {
+    0%, 100% { background-position: -200% center; }
+    50% { background-position: 200% center; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.92); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
