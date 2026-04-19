@@ -1,30 +1,32 @@
 // All mehendi design images with prices and categories
-import bridal1 from "../assets/images/bridal/bridal1.jpg";
-import bridal2 from "../assets/images/bridal/bridal2.jpg";
-import bridal3 from "../assets/images/bridal/bridal3.jpg";
 
-import groom1 from "../assets/images/groom/groom1.jpg";
-import groom2 from "../assets/images/groom/groom2.jpg";
+// Image path constants for public folder access
+const bridal1 = "/images/bridal/bridal1.jpg";
+const bridal2 = "/images/bridal/bridal2.jpg";
+const bridal3 = "/images/bridal/bridal3.jpg";
 
-import baby1 from "../assets/images/Baby showr/baby1.jpg";
-import baby2 from "../assets/images/Baby showr/baby2.jpg";
+const groom1 = "/images/groom/groom1.jpg";
+const groom2 = "/images/groom/groom2.jpg";
 
-import gen1 from "../assets/images/general/gen1.jpg";
-import gen2 from "../assets/images/general/gen2.jpg";
-import gen3 from "../assets/images/general/gen3.jpg";
-import gen4 from "../assets/images/general/gen4.jpg";
-import gen5 from "../assets/images/general/gen5.jpg";
-import gen6 from "../assets/images/general/gen6.jpg";
-import gen7 from "../assets/images/general/gen7.jpg";
-import gen8 from "../assets/images/general/gen8.jpg";
-import gen9 from "../assets/images/general/gen9.jpg";
-import gen10 from "../assets/images/general/gen10.jpg";
-import gen11 from "../assets/images/general/gen11.jpg";
-import gen12 from "../assets/images/general/gen12.jpg";
-import gen13 from "../assets/images/general/gen13.jpg";
-import gen14 from "../assets/images/general/gen14.jpg";
-import gen15 from "../assets/images/general/gen15.jpg";
-import gen16 from "../assets/images/general/gen16.jpg";
+const baby1 = "/images/baby-shower/baby1.jpg";
+const baby2 = "/images/baby-shower/baby2.jpg";
+
+const gen1 = "/images/general/gen1.jpg";
+const gen2 = "/images/general/gen2.jpg";
+const gen3 = "/images/general/gen3.jpg";
+const gen4 = "/images/general/gen4.jpg";
+const gen5 = "/images/general/gen5.jpg";
+const gen6 = "/images/general/gen6.jpg";
+const gen7 = "/images/general/gen7.jpg";
+const gen8 = "/images/general/gen8.jpg";
+const gen9 = "/images/general/gen9.jpg";
+const gen10 = "/images/general/gen10.jpg";
+const gen11 = "/images/general/gen11.jpg";
+const gen12 = "/images/general/gen12.jpg";
+const gen13 = "/images/general/gen13.jpg";
+const gen14 = "/images/general/gen14.jpg";
+const gen15 = "/images/general/gen15.jpg";
+const gen16 = "/images/general/gen16.jpg";
 
 export const designsData = [
   // ── Bridal Designs ──

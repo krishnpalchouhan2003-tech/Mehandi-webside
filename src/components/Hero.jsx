@@ -50,7 +50,7 @@ function Hero() {
         <div className="relative order-1 md:order-2 max-w-sm mx-auto md:max-w-none">
           <div className="absolute inset-0 bg-secondary/10 rounded-full blur-3xl transform scale-110"></div>
           <img
-            src="/src/assets/images/home/hero.png"
+            src="/images/home/hero.png"
             className="relative z-10 w-full rounded-2xl border-4 border-secondary/30 shadow-2xl"
             alt="Nitika Bridal Mehendi"
           />

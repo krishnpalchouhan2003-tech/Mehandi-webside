@@ -1,8 +1,8 @@
 function Gallery() {
   const designs = [
-    { title: "Bridal Mehendi", image: "/src/assets/images/home/bridal.png" },
-    { title: "Arabic Mehendi", image: "/src/assets/images/home/arabic.png" },
-    { title: "Festival Mehendi", image: "/src/assets/images/home/festival.png" },
+    { title: "Bridal Mehendi", image: "/images/home/bridal.png" },
+    { title: "Arabic Mehendi", image: "/images/home/arabic.png" },
+    { title: "Festival Mehendi", image: "/images/home/festival.png" },
   ];
 
   return (

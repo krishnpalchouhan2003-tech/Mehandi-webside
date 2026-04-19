@@ -1,6 +1,7 @@
-import bridal1 from "../assets/images/bridal/bridal1.jpg";
-import groom1 from "../assets/images/groom/groom1.jpg";
-import baby1 from "../assets/images/Baby showr/baby1.jpg";
+// Image path constants for public folder access
+const bridal1 = "/images/bridal/bridal1.jpg";
+const groom1 = "/images/groom/groom1.jpg";
+const baby1 = "/images/baby-shower/baby1.jpg";
 
 export const galleryData = [
   { id: 1, image: bridal1, category: "Bridal" },
