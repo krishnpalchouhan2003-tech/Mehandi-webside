@@ -4,11 +4,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Pinyon+Script&display=swap');
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 @layer base {
   body {
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
   }
 
   h1, h2, h3, h4 {
@@ -86,14 +93,15 @@
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #fdf1e7;
+    background: #1a0101;
   }
   ::-webkit-scrollbar-thumb {
-    background: #7a1f3d;
+    background: #d4a853;
     border-radius: 4px;
+    border: 2px solid #1a0101;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #5a1530;
+    background: #f0d48a;
   }
 
   /* Modal backdrop animation */

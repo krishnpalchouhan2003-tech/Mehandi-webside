@@ -1,6 +1,6 @@
 function HowItWorks() {
   const steps = [
-    { number: "1", title: "Contact Us on WhatsApp" },
+    { number: "1", title: "Contact on Instagram DM" },
     { number: "2", title: "Share Your Date & Location" },
     { number: "3", title: "Choose Your Design" },
     { number: "4", title: "Confirm Booking" },
