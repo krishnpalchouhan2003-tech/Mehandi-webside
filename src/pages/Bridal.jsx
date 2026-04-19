@@ -15,7 +15,7 @@ function Bridal() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[60vh] sm:h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden pt-16 md:pt-0">
         <img
           src={bridalDesigns[0]?.image}
           alt="Bridal Mehendi"
@@ -23,77 +23,89 @@ function Bridal() {
         />
         <div className="absolute inset-0 page-hero-overlay"></div>
 
-        <div className="relative z-10 text-center px-4">
-          <p className="text-secondary font-semibold tracking-[0.3em] uppercase text-sm mb-4 animate-fade-in">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-10 md:pt-0">
+          <p className="text-secondary font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-xs sm:text-sm mb-3 sm:mb-4 animate-fade-in">
             ✦ Premium Collection ✦
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-3 sm:mb-4 animate-fade-in-up uppercase tracking-tight">
             Bridal <span className="gold-shimmer">Mehendi</span>
           </h1>
-          <p className="text-white/80 text-lg max-w-xl mx-auto mb-8 animate-fade-in-up">
+          <p className="text-white/80 text-base sm:text-lg max-w-xl mx-auto mb-6 sm:mb-8 animate-fade-in-up leading-relaxed">
             Make your special day unforgettable with our exquisite bridal mehendi designs crafted with precision and love
           </p>
           <a
-            href="https://wa.me/919302154692?text=Hi%20I%20want%20to%20book%20bridal%20mehendi"
+            href="https://www.instagram.com/mehandi_blooms_by_nitika?igsh=MTZ5MXN0amEwYmZwcA=="
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-secondary text-dark px-8 py-3 rounded-xl font-bold hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in-up"
+            className="inline-flex items-center gap-2 bg-secondary text-[#4a0404] px-6 sm:px-8 py-3 rounded-xl font-bold hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in-up text-sm sm:text-base"
           >
-            Book Bridal Mehendi
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Book on Instagram
           </a>
         </div>
 
-        {/* Bottom wave */}
+        {/* Bottom wave optimized for dark theme transition */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-            <path d="M0 60L48 55C96 50 192 40 288 35C384 30 480 30 576 33.3C672 36.7 768 43.3 864 45C960 46.7 1056 43.3 1152 38.3C1248 33.3 1344 26.7 1392 23.3L1440 20V60H1392C1344 60 1248 60 1152 60C1056 60 960 60 864 60C768 60 672 60 576 60C480 60 384 60 288 60C192 60 96 60 48 60H0Z" fill="#fdf1e7"/>
+            <path d="M0 60L48 55C96 50 192 40 288 35C384 30 480 30 576 33.3C672 36.7 768 43.3 864 45C960 46.7 1056 43.3 1152 38.3C1248 33.3 1344 26.7 1392 23.3L1440 20V60H1392C1344 60 1248 60 1152 60C1056 60 960 60 864 60C768 60 672 60 576 60C480 60 384 60 288 60C192 60 96 60 48 60H0Z" fill="#2a0202"/>
           </svg>
         </div>
       </section>
 
-      {/* Info Section */}
-      <section className="bg-cream py-16 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto">
+      {/* Info Section - Unified Dark Theme */}
+      <section className="bg-[#2a0202] py-16 px-6 md:px-10 relative overflow-hidden">
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">💍</span>
+            <div className="text-center p-6 bg-[#3d0505]/40 backdrop-blur-sm rounded-2xl border border-secondary/10 hover:border-secondary transition-all">
+              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-secondary/20">
+                <span className="text-3xl text-secondary">💍</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Full Bridal Package</h3>
-              <p className="text-gray-600">Complete bridal mehendi from fingertips to elbows with detailed traditional motifs</p>
+              <h3 className="text-xl font-bold text-white mb-2">Full Bridal Package</h3>
+              <p className="text-white/60">Complete bridal mehendi from fingertips to elbows with detailed traditional motifs</p>
             </div>
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🎨</span>
+            <div className="text-center p-6 bg-[#3d0505]/40 backdrop-blur-sm rounded-2xl border border-secondary/10 hover:border-secondary transition-all">
+              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-secondary/20">
+                <span className="text-3xl text-secondary">🎨</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Custom Designs</h3>
-              <p className="text-gray-600">Personalized designs with your names, wedding date & special elements</p>
+              <h3 className="text-xl font-bold text-white mb-2">Custom Designs</h3>
+              <p className="text-white/60">Personalized designs with your names, wedding date & special elements</p>
             </div>
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">⏰</span>
+            <div className="text-center p-6 bg-[#3d0505]/40 backdrop-blur-sm rounded-2xl border border-secondary/10 hover:border-secondary transition-all">
+              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-secondary/20">
+                <span className="text-3xl text-secondary">⏰</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">2-4 Hours Session</h3>
-              <p className="text-gray-600">Dedicated time for a flawless bridal mehendi experience at your location</p>
+              <h3 className="text-xl font-bold text-white mb-2">2-4 Hours Session</h3>
+              <p className="text-white/60">Dedicated time for a flawless bridal mehendi experience at your location</p>
             </div>
           </div>
 
-          {/* Price Range */}
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 text-center mb-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Bridal Mehendi Packages</h2>
-            <div className="flex items-baseline justify-center gap-2 mb-4">
-              <span className="text-5xl font-extrabold text-primary">₹3,000</span>
-              <span className="text-2xl text-gray-400">–</span>
-              <span className="text-5xl font-extrabold text-primary">₹8,000</span>
+          {/* Price Range - Redesigned for Dark Theme Consistency */}
+          <div className="bg-[#3d0505]/60 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-secondary/20 text-center mb-16 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent"></div>
+            <h2 className="text-2xl font-bold text-white mb-6 tracking-wide">Bridal Mehendi Packages</h2>
+            
+            <div className="flex justify-center items-center gap-6 sm:gap-12 mb-8 relative">
+              <div className="text-center">
+                <p className="text-secondary/60 text-[10px] sm:text-xs uppercase tracking-[0.2em] mb-2">Starting From</p>
+                <p className="text-3xl sm:text-5xl font-extrabold text-white">₹3,000</p>
+              </div>
+              <div className="h-16 w-px bg-gradient-to-b from-transparent via-secondary/30 to-transparent"></div>
+              <div className="text-center">
+                <p className="text-secondary/60 text-[10px] sm:text-xs uppercase tracking-[0.2em] mb-2">Premium Collection</p>
+                <p className="text-3xl sm:text-5xl font-extrabold text-white">₹8,000</p>
+              </div>
             </div>
-            <p className="text-gray-500 mb-6">Price varies based on design complexity and coverage</p>
-            <div className="w-20 h-1 bg-secondary rounded-full mx-auto"></div>
+            
+            <p className="text-white/60 mb-6 max-w-sm mx-auto">Price varies based on design complexity and coverage</p>
+            <div className="w-20 h-1 bg-secondary rounded-full mx-auto shadow-glow"></div>
           </div>
 
-          {/* Designs */}
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
-            Bridal Design Collection
-            <span className="block w-24 h-[3px] bg-secondary mx-auto mt-3 rounded-full"></span>
+          {/* Designs Section */}
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 tracking-tight">
+            Bridal Design <span className="gold-shimmer font-cursive text-5xl">Collection</span>
+            <span className="block w-24 h-[1px] bg-gradient-to-r from-transparent via-secondary to-transparent mx-auto mt-4"></span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,32 +120,32 @@ function Bridal() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-primary py-16 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready for Your Dream Bridal Mehendi?
+      {/* CTA Section - Standardized Dark Maroon */}
+      <section className="bg-maroon-pattern py-20 px-6 text-center border-t border-secondary/10 relative overflow-hidden">
+        <div className="max-w-3xl mx-auto relative z-10">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            Ready for Your <span className="gold-shimmer">Dream Bridal</span> Mehendi?
           </h2>
-          <p className="text-white/80 mb-8 text-lg">
-            Book your appointment now and let us create the perfect bridal mehendi for your special day
+          <p className="text-white/60 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">
+            Book your appointment now and let us create the perfect bridal mehendi for your special day. Professional home service available.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center mt-10">
             <a
-              href="https://wa.me/919302154692?text=Hi%20I%20want%20to%20book%20bridal%20mehendi"
+              href="https://www.instagram.com/mehandi_blooms_by_nitika?igsh=MTZ5MXN0amEwYmZwcA=="
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-green-700 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center gap-3 bg-secondary text-[#4a0404] px-10 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:scale-105"
             >
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
               </svg>
-              Book on WhatsApp
+              Book on Instagram
             </a>
             <Link
               to="/designs"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center gap-3 bg-transparent text-secondary border-2 border-secondary/30 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-secondary hover:text-[#4a0404] transition-all duration-300 hover:scale-105"
             >
-              View All Designs →
+              View All Gallery
             </Link>
           </div>
         </div>

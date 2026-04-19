@@ -27,15 +27,15 @@ const StatsBar = () => {
           <circle cx="12" cy="10" r="3" />
         </svg>
       ),
-      label: "Serving in Indore"
+      label: "Serving in Khandwa"
     }
   ];
 
   return (
-    <div className="bg-[#2D0A0A] text-cream py-4 px-6">
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-around items-center gap-6">
+    <div className="bg-[#2D0A0A] text-cream py-3 sm:py-4 px-4 sm:px-10">
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-4 items-center">
         {stats.map((stat, index) => (
-          <div key={index} className="flex items-center gap-2 text-sm md:text-base font-medium">
+          <div key={index} className="flex items-center gap-2 text-xs sm:text-sm md:text-base font-medium whitespace-nowrap">
             <span className="text-secondary">{stat.icon}</span>
             <span>{stat.label}</span>
           </div>
